@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    max-width: 1200px;
+    background: rgb(44, 166, 207);
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
+    padding: .5em
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    margin: 10% auto;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    text-shadow: -1px 0 2px #000000;
+    padding: 1em;
+}
+
+button {
+    background: #000000;
+    color: #fff;
+    border-radius: 5px;
+    width: 100%;
+    margin: .5em 0;
+    padding: 1em;
+    box-shadow: 0px 2px 5px #fff;
+}
+
+button:active {
+    background: #fff;
+    color: #000000;
+    box-shadow: 0px 2px 5px #000000;
+}
+
+.random-user-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 1em 0;
+}
+
+.random-user-container img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 100px;
+    margin-bottom: .5em;
+}
+
+.random-user-container ul {
+    list-style: none;
+    max-width: 400px;
+    width: 100%;
+    padding: 0 .5em;
+}
+
+.random-user-container ul span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    font-weight: 700;
+    width: 100%;
+}
+
+.random-user-container span li {
+    font-weight: normal;
+    margin: .25em;
+}
+
+@media (max-width: 500px) {
+    .random-user-container {
+        flex-direction: column;
+    }
+    .random-user-container span li {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-word;
+    }
+}
